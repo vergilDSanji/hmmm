@@ -12,6 +12,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  background-image: url(satoru.jpg);
   height: 100vh;
   background-position: auto;
   background-size: cover;
