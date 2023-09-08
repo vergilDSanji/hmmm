@@ -16,11 +16,98 @@
     <header class="header">
         <a href="#" class="logo"></a>
         <nav class="navbar">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">loving you</a>
-            <a href="#">Gallery</a>
+            <a href="#" id="homeButton">Home</a>
+            <a href="#" id="aboutButton">About</a>
+            <a href="#" id="poetryButton">Poetry</a>
+            <a href="#" id="galleryButton">Gallery</a>
+            <a href="#" id="contactButton">Contact</a>
         </nav>
     </header>  
+    <main>
+      <!-- Content to be dynamically updated -->
+      <div id="homeContent">
+        <p>Welcome to our website!</p>
+      </div>
+      <div id="aboutContent">
+        <!-- About us content goes here -->
+        <h2>About Us</h2>
+        <p>We are Romance in Bloom, a website dedicated to celebrating love and romance through poems and visual art.</p>
+      </div>
+      <div id="poetryContent">
+        <h2>Romance Poems</h2>
+        <p>Poem 1: Your Eyes</p>
+        <p>Poem 2: Love's Embrace</p>
+        <p>Poem 3: Heart's Desire</p>
+        <p>Poem 4: In Your Arms</p>
+      </div>
+      <div id="galleryContent">
+        <h2>Gallery</h2>
+        <img src="image1.jpg" alt="Image 1">
+        <img src="image2.jpg" alt="Image 2">
+        <img src="image3.jpg" alt="Image 3">
+        <img src="image4.jpg" alt="Image 4">
+        <img src="image5.jpg" alt="Image 5">
+      </div>
+      <div id="contactContent">
+        <h2>Contact Us</h2>
+                <p>Email: contact@example.com</p>
+                <p>Phone: +1 123-456-7890</p>
+                <p>Address: 123 Love Street, Romanceville</p>
+      </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-info">
+          <p>© 2023 Romance in Bloom. All Rights Reserved.</p>
+          <p>Contact us: <a href="m66tshilidzi.com">Love you Andani.com</a></p>
+      </div>
+      <div class="footer-links">
+          <ul>
+              <li><a href="/privacy-policy">Privacy Policy</a></li>
+              <li><a href="/terms-of-use">Terms of Use</a></li>
+          </ul>
+      </div>
+  </div>
+  </footer>
+
+  <script>
+    // Get references to content divs
+    const homeContent = document.getElementById('homeContent');
+    const aboutContent = document.getElementById('aboutContent');
+    const poetryContent = document.getElementById('poetryContent');
+    const galleryContent = document.getElementById('galleryContent');
+    const contactContent = document.getElementById('contactContent');
+
+    // Get references to navigation buttons
+    const homeButton = document.getElementById('homeButton');
+    const aboutButton = document.getElementById('aboutButton');
+    const poetryButton = document.getElementById('poetryButton');
+    const galleryButton = document.getElementById('galleryButton');
+    const contactButton = document.getElementById('contactButton');
+
+    // Function to show/hide content based on button clicks
+    function showContent(contentToShow) {
+        // Hide all content divs
+        homeContent.style.display = 'none';
+        aboutContent.style.display = 'none';
+        poetryContent.style.display = 'none';
+        galleryContent.style.display = 'none';
+        contactContent.style.display = 'none';
+
+        // Show the selected content
+        contentToShow.style.display = 'block';
+    }
+
+    // Add event listeners to navigation buttons
+    homeButton.addEventListener('click', () => showContent(homeContent));
+    aboutButton.addEventListener('click', () => showContent(aboutContent));
+    poetryButton.addEventListener('click', () => showContent(poetryContent));
+    galleryButton.addEventListener('click', () => showContent(galleryContent));
+    contactButton.addEventListener('click', () => showContent(contactContent));
+
+    // Initially, display the home content
+    showContent(homeContent);
+  </script>
 </body>
 </html>
