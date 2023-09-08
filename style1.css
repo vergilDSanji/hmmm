@@ -19,7 +19,7 @@ body {
   left: 0;
   width: 100%;
   padding: 10px 10%;
-  background: #FFC0CB;
+  background: black;
   border: 2px solid rgba(255, 255, 255, .1);
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adjusted shadow opacity */
@@ -50,7 +50,7 @@ body {
 
 .navbar a {
   font-size: 10px;
-  color: ghostwhite;
+  color: purple;
   text-decoration: none;
   font-weight: 500;
   margin-left: 20px; /* Slightly reduced margin */
@@ -59,7 +59,7 @@ body {
 
 .navbar a:hover,
 .navbar a.active {
-  color: black;
+  color: whitesmoke;
 }
 
 /* Media query for screens with a minimum width of 768px (adjust as needed) */
@@ -69,63 +69,28 @@ body {
   }
 }
 
-/* Add styles for the container */
-.dropdown-container {
-  display: flex;
-  margin: 5% 10%; /* Adjusted margin */
-  flex-direction: column;
-  gap: 20px;
-}
-
-/* Styles for individual dropdowns */
-.inputBox {
-  width: 100%;
-  border-radius: 15px;
-  position: relative;
-}
-
-.inputBox select {
-  width: 100%;
-  background-color: transparent;
-  border: none;
-  outline: none;
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  border-radius: 35px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adjusted shadow opacity */
-  font-size: 18px;
-  color: rgb(183, 110, 121);
-  padding: 15px;
-}
-
-.inputBox select::placeholder {
-  color: ghostwhite;
-}
-
-.inputBox i {
-  position: absolute;
-  right: 15px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 20px;
-  color: rgba(0, 0, 0, 0.5);
-}
-
-/* Main Content Styles */
 main {
   padding: 20px;
   color: #000;
 }
 
-/* Footer Styles */
-footer {
-  background-color: #FFC0CB;
-  border: 2px solid rgba(255, 255, 255, 0.1);
-  padding: 10px 0; /* Adjusted padding */
-  color: #000;
-  text-align: left;
-  position: absolute;
-  bottom: 0;
+.gallery-image {
+  max-width: 700px; /* Set a maximum width for gallery images */
   width: 100%;
+  height: auto;
+  margin-bottom: 20px; /* Add margin to separate images */
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  color: purple;
+  text-align: center;
+  padding: 10px 0;
+  z-index: 999; /
 }
 
 .footer-content {
@@ -158,7 +123,7 @@ footer {
 }
 .smoke span {
   position: absolute;
-  color: ghostwhite;
+  color: red;
   font-family: sans-serif;
   font-weight: bold;
   letter-spacing: 20px;
