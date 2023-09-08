@@ -9,9 +9,8 @@
 body {
   min-height: 100vh;
   background-image: url(IMG.jpg);
-  height: 100vh;
   background-position: center;
-  background-size: contain;
+  background-size: cover; /* Use cover to ensure the background covers the entire viewport */
 }
 
 .header {
@@ -23,9 +22,8 @@ body {
   background: #FFC0CB;
   border: 2px solid rgba(255, 255, 255, .1);
   backdrop-filter: blur(10px);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 10);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adjusted shadow opacity */
   display: flex;
-  position: fixed;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
@@ -39,25 +37,24 @@ body {
 }
 
 .main-content {
-  margin: 60px;
-  width: 95%; /* Decrease the width */
-  max-width: 400px; /* Decrease the max-width */
-  background: transparent;
-  border: 2px solid rgba(255, 255, 255, 0.5);
+  margin: 80px 10%; /* Increase margin for better spacing */
+  width: 80%; /* Adjusted width */
+  max-width: 600px; /* Adjusted max-width */
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
   backdrop-filter: blur(10px);
-  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   color: ghostwhite;
   border-radius: 10px;
-  padding: 30px 40px; /* Decrease the padding */
+  padding: 30px;
 }
 
 .navbar a {
-  font-size: 10px; /* Default font size for all screens */
+  font-size: 10px;
   color: ghostwhite;
   text-decoration: none;
   font-weight: 500;
-  margin-left: 30px;
-  transition: .5s;
+  margin-left: 20px; /* Slightly reduced margin */
+  transition: 0.5s;
 }
 
 .navbar a:hover,
@@ -68,23 +65,22 @@ body {
 /* Media query for screens with a minimum width of 768px (adjust as needed) */
 @media screen and (min-width: 768px) {
   .navbar a {
-    font-size: 15px; /* Font size for desktop screens */
+    font-size: 15px;
   }
 }
 
 /* Add styles for the container */
 .dropdown-container {
   display: flex;
-  margin: 10%;
+  margin: 5% 10%; /* Adjusted margin */
   flex-direction: column;
-  gap: 20px; /* 20px space between dropdowns */
+  gap: 20px;
 }
 
 /* Styles for individual dropdowns */
 .inputBox {
   width: 100%;
   border-radius: 15px;
-  padding: 2px;
   position: relative;
 }
 
@@ -95,7 +91,7 @@ body {
   outline: none;
   border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 35px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 10);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adjusted shadow opacity */
   font-size: 18px;
   color: rgb(183, 110, 121);
   padding: 15px;
@@ -113,24 +109,23 @@ body {
   font-size: 20px;
   color: rgba(0, 0, 0, 0.5);
 }
+
 /* Main Content Styles */
 main {
   padding: 20px;
-  color: #000; /* Black text */
+  color: #000;
 }
 
 /* Footer Styles */
 footer {
-  background-color: #FFC0CB; /* Pink background */
-  background-size: contain;
-  border: 2px solid rgba(255, 255, 255, .1);
-  padding: 2px 0;
-  color: #000; /* Black text */
+  background-color: #FFC0CB;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  padding: 10px 0; /* Adjusted padding */
+  color: #000;
   text-align: left;
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: auto ; /* Adjust the height as needed */
 }
 
 .footer-content {
@@ -154,8 +149,7 @@ footer {
 }
 
 .smoke {
-  top: 50%;
-  left: 20%;
+  margin-left: 40px;
   width: 100%;
   height: 100%;
   pointer-events: none; 
