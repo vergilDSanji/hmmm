@@ -10,7 +10,7 @@ body {
   min-height: 100vh;
   background-image: url(IMG.jpg);
   background-position: center;
-  background-size: cover; /* Use cover to ensure the background covers the entire viewport */
+  background-size: cover;
 }
 
 .header {
@@ -22,7 +22,7 @@ body {
   background: black;
   border: 2px solid rgba(255, 255, 255, .1);
   backdrop-filter: blur(10px);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adjusted shadow opacity */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -75,10 +75,17 @@ main {
 }
 
 .gallery-image {
-  max-width: 700px; /* Set a maximum width for gallery images */
+  max-width: 700px;
   width: 100%;
   height: auto;
-  margin-bottom: 20px; /* Add margin to separate images */
+  margin-bottom: 20px;
+}
+
+.gallery-video {
+  max-width: 700px; 
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
 }
 
 footer {
