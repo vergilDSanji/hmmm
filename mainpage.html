@@ -43,6 +43,7 @@
         <p>(hope I gave you a kiss as soon as you finished this if I didn’t slap me for me please)</p>
     </div>
     <div id="poetryContent">
+      
       <div class="poetry-carousel">
         <button class="nav left" onclick="prevPoem()">&#8249;</button>
         <div class="poem-container active">
@@ -168,12 +169,16 @@
         function prevPoem() {
             if (currentPoem > 0) {
                 showPoem(currentPoem - 1);
+            } else {
+                showPoem(poems.length - 1); // Wrap to the last poem when at the beginning
             }
         }
 
         function nextPoem() {
             if (currentPoem < poems.length - 1) {
                 showPoem(currentPoem + 1);
+            } else {
+                showPoem(0); // Wrap to the first poem when at the end
             }
         }
   </script>

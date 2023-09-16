@@ -215,6 +215,10 @@ footer {
   outline: none;
 }
 
+.poetry-carousel .nav:hover {
+  cursor: pointer; /* Change cursor to hand when hovering */
+}
+
 .poetry-carousel .nav.left {
   left: 0;
 }
