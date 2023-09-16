@@ -37,10 +37,10 @@ body {
 }
 
 .main-content {
-  margin: 80px 10%; /* Increase margin for better spacing */
-  width: 80%; /* Adjusted width */
-  max-width: 600px; /* Adjusted max-width */
-  background: rgba(255, 255, 255, 0.00); /* Semi-transparent background */
+  margin: 80px 10%;
+  width: 80%;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.00);
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   color: purple;
@@ -53,7 +53,7 @@ body {
   color: purple;
   text-decoration: none;
   font-weight: 500;
-  margin-left: 20px; /* Slightly reduced margin */
+  margin-left: 20px;
   transition: 0.5s;
 }
 
@@ -82,7 +82,7 @@ main {
 }
 
 .gallery-video {
-  max-width: 700px; 
+  max-width: 700px;
   width: 100%;
   height: auto;
   margin-bottom: 20px;
@@ -97,7 +97,7 @@ footer {
   color: purple;
   text-align: center;
   padding: 10px 0;
-  z-index: 999; /
+  z-index: 999;
 }
 
 .footer-content {
@@ -124,10 +124,11 @@ footer {
   margin-left: 40px;
   width: 100%;
   height: 100%;
-  pointer-events: none; 
+  pointer-events: none;
   z-index: -1;
-  overflow: hidden; 
+  overflow: hidden;
 }
+
 .smoke span {
   position: absolute;
   color: red;
@@ -186,7 +187,7 @@ footer {
   }
 }
 
-/* CSS Styles */
+/* CSS Styles for the poetry carousel */
 .poetry-carousel {
   display: flex;
   overflow: hidden;
@@ -197,6 +198,8 @@ footer {
   flex: 1;
   opacity: 0;
   transition: opacity 0.3s;
+  height: 300px; /* Adjust the height as needed */
+  overflow-y: auto; /* Add scrollbars if content exceeds the height */
 }
 
 .poetry-carousel .poem-container.active {
@@ -216,7 +219,7 @@ footer {
 }
 
 .poetry-carousel .nav:hover {
-  cursor: pointer; /* Change cursor to hand when hovering */
+  cursor: pointer;
 }
 
 .poetry-carousel .nav.left {
@@ -225,8 +228,4 @@ footer {
 
 .poetry-carousel .nav.right {
   right: 0;
-}
-
-.poem {
-  display: none;
 }
