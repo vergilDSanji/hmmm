@@ -88,37 +88,6 @@ main {
   margin-bottom: 20px;
 }
 
-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: black;
-  color: purple;
-  text-align: center;
-  padding: 10px 0;
-  z-index: 999; /
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-info {
-  flex: 1;
-}
-
-.footer-links ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-links li {
-  display: inline;
-  margin-right: 20px;
-}
 
 .smoke {
   margin-left: 40px;
