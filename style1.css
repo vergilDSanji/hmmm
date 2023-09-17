@@ -186,15 +186,3 @@ footer {
   }
 }
 
-.password-toggle {
-  position: absolute;
-  right: 10px; /* Adjust the positioning as needed */
-  top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
-}
-
-.password-toggle i {
-  font-size: 18px; /* Adjust the icon size as needed */
-  color: #888; /* Adjust the icon color */
-}
